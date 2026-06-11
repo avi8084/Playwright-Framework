@@ -53,7 +53,13 @@ test("Validate the success Message" , async({page}) => {
      expect(message).toBe("Thank you for your order!")
 
 })
-test("Validate Back Home Button" , async({page}) => {
+test("Validate Back Home Button 1" , async({page}) => {
+    await finalPage.clickonBackHomeBtn();
+    await expect(page).toHaveURL("https://www.saucedemo.com/inventory.html")
+
+})
+
+test("Validate Back Home Button 2" , async({page}) => {
     await finalPage.clickonBackHomeBtn();
     await expect(page).toHaveURL("https://www.saucedemo.com/inventory.html")
 
