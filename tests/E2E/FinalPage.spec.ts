@@ -40,7 +40,7 @@ test.describe("Final page Validation", () => {
     })
     test("Validate checkout overview page UI and URL" , async({page})=>
 {
-    await expect(page).toHaveURL("https://www.saucedemo.com/checkout-complete.html")
+    await expect(page).toHaveURL("https://www.saucedemo.com/checkout-complete.html/Engineer B")
     const elements = await finalPage.getFinalPageElements();
     await expect(elements.backHomeBtn).toBeVisible();
     await expect(elements.successMessage).toBeVisible();
