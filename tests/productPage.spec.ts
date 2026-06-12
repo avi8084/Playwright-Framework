@@ -55,7 +55,7 @@ test.describe("Product page Validation", () => {
 
     })
 
-    test.only('Filter By Name Z to A', async () => {
+    test('Filter By Name Z to A', async () => {
         await productPage.filterByNameZtoA()
         const names = await productPage.getProductNames()
         const sorted = [...names].sort().reverse()
@@ -63,7 +63,7 @@ test.describe("Product page Validation", () => {
 
     })
 
-    test.only('Filter By Price Low to High', async () => {
+    test('Filter By Price Low to High', async () => {
         await productPage.filterByPriceLowToHigh()
         const prices = await productPage.getProductPrices()
         const sortedprice = [...prices].sort((a,b)=>a-b)
@@ -71,7 +71,7 @@ test.describe("Product page Validation", () => {
 
     })
 
-    test.only('Filter By Price High to Low', async () => {
+    test('Filter By Price High to Low', async () => {
          await productPage.filterByPriceHighToLow()
         const prices = await productPage.getProductPrices()
         const sortedprice = [...prices].sort((a,b)=>b-a)

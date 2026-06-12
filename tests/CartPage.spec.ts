@@ -71,7 +71,7 @@ test.describe("Product page Validation", () => {
 
     })
 
-    test.only("Validate Remove Product Functionality", async ({ page }) => {
+    test("Validate Remove Product Functionality", async ({ page }) => {
         await productPage.addallProductToCart();
         await productPage.clickOnCartLink();
         const initialProducts = await cartPage.getCartProducts();
