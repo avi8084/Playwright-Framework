@@ -58,4 +58,10 @@ test("Validate Back Home Button" , async({page}) => {
     await expect(page).toHaveURL("https://www.saucedemo.com/inventory.html")
 
 })
+
+test("Validate Back Home Button 1234" , async({page}) => {
+    await finalPage.clickonBackHomeBtn();
+    await expect(page).toHaveURL("https://www.saucedemo.com/inventory.html")
+
+})
 })
